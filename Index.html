@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos de Mercado Libre</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 70px;
+            background-color:  #82ecfc;
+        }
+        .navbar {
+            background-color: #ffe600;
+        }
+        .navbar-brand img {
+            height: 40px;
+        }
+        .search-bar {
+            width: 50%;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .card {
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-title {
+            color: #333;
+        }
+        .card-text {
+            color: #28a745;
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #3483fa;
+            border-color: #3483fa;
+        }
+        .btn-primary:hover {
+            background-color: #2968c8;
+            border-color: #2968c8;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.9/mercadolibre/logo__large_plus.png" alt="Mercado Libre">
+        </a>
+        <form class="form-inline my-2 my-lg-0 mx-auto">
+            <input id="search-input" class="form-control mr-sm-2 search-bar" type="search" placeholder="Buscar productos, marcas y más..." aria-label="Buscar">
+            <button id="search-button" class="btn btn-primary my-2 my-sm-0" type="button">Buscar</button>
+        </form>
+    </nav>
+    <div class="container">
+        <div id="result-list" class="row"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
